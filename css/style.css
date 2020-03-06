@@ -432,6 +432,9 @@ select{
 .form_cadastro .campo:nth-child(10) button{
     margin: 2em auto;
 }
+header .fa-bars{
+    display: none;
+}
 /* Inicio responsividade */
 /* 880px */
 
@@ -446,7 +449,7 @@ select{
 
     .partidas .container{
         align-items: flex-start;
-        flex-git flow: nowrap;
+        flex-flow: nowrap;
     }
 
     .em_andamento{
@@ -493,3 +496,43 @@ select{
 
 
 /* fim media quary 880px */
+
+
+@media(max-width: 460px){
+    header .fa-bars{
+        color: var(--purple);
+        font-size: 3em;
+        display: block;
+    }
+    header .container div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: -6em;
+    }
+
+    header .container div a {
+        margin-left: 7em;
+    }
+
+    #menu{
+        position: absolute;
+        top: 5.5em;
+        left: 0;
+        width: 100%;
+        background-color: var(--purple);
+        display: none;
+    }
+    #menu ul {
+        flex-direction: column;
+        height: 350px;
+        margin-left: 1em;
+    }
+
+    #menu a {
+        padding: 0.5em 0 ;
+        display: block;
+       
+    }
+
+}
